@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-container p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Competition Cards */
+.competition-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.competition-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.competition-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #eff6ff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    font-size: 1.4rem;
+    color: #1e3a8a;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.badge.beginner {
+    background-color: #10b981;
+}
+
+.badge.intermediate {
+    background-color: #f59e0b;
+}
+
+.badge.advanced {
+    background-color: #ef4444;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.card-body i {
+    margin-right: 8px;
+    color: #2563eb;
+}
+
+.card-footer {
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: right;
+}
+
+.btn {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
